@@ -357,15 +357,19 @@ footer a:hover::after {
 }
 @media screen and (max-width: 465px) {
   #skills img {
-    max-height: 75%;
-    max-width: 75%;
+    max-height: 70%;
+    max-width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
   }
+  .interest {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   #skills img {
     max-height: 60%;
     max-width: 60%;
@@ -375,10 +379,15 @@ footer a:hover::after {
     position: relative;
   }
 }
-@media screen and (max-width: 300px) {
-  h1 {
-    height: 80vh;
-    position: relative;
-    margin: 2vw 2vw 0;
+@media screen and (max-width: 400px) {
+  .img {
+    justify-content: center;
+    max-height: 300px;
+    max-width: 300px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #skills img {
+    max-width: 50%;
   }
 }
