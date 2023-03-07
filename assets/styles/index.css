@@ -375,3 +375,10 @@ footer a:hover::after {
     position: relative;
   }
 }
+@media screen and (max-width: 300px) {
+  h1 {
+    height: 80vh;
+    position: relative;
+    margin: 2vw 2vw 0;
+  }
+}
