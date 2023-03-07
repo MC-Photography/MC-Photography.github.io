@@ -55,7 +55,7 @@ h1 {
   letter-spacing: 2px;
   font-size: 5rem;
   color: #fefeff;
-  text-shadow: 1px -4px 0 rgb(10 10 10 / 25%);
+  text-shadow: 1px -3px 0 rgb(10 10 10 / 25%);
   text-align: center;
   font-family: "font-bold", serif;
 }
@@ -92,13 +92,14 @@ h2 {
 form {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "i1 i2"
-    "i3 i3"
-    "ta ta"
-    "bt bt";
+    "i1"
+    "i2"
+    "i3"
+    "ta"
+    "bt";
 }
 #firstname {
   width: 90%;
@@ -123,7 +124,7 @@ form {
   grid-area: i2;
 }
 #email {
-  width: 95%;
+  width: 90%;
   max-height: 20px;
   margin: 0;
   margin-bottom: 5px;
@@ -135,7 +136,7 @@ form {
   grid-area: i3;
 }
 textarea {
-  width: 95%;
+  width: 90%;
   margin: 0;
   margin-bottom: 10px;
   border: 1px solid black;
@@ -150,7 +151,7 @@ textarea {
 }
 
 #btn-submit {
-  width: 95%;
+  width: 50%;
   max-height: 50px;
   margin: 0;
   margin-bottom: 10px;
@@ -173,18 +174,7 @@ textarea {
     display: block;
   }
 }
-@media screen and (max-width: 1080px) {
-  form {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "i1"
-      "i2"
-      "i3"
-      "ta"
-      "bt";
-  }
-}
+
 @media screen and (max-width: 520px) {
   h1 {
     letter-spacing: 2px;
