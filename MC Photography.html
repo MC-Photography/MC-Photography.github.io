@@ -34,12 +34,38 @@
       >
         <input type="hidden" name="_captcha" value="false" />
         <input type="text" name="_honey" style="display: none" />
-        <input type="text" id="firstname" placeholder="Prénom" required />
-        <input type="text" id="surname" placeholder="Nom" required />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://MC-Photography.github.io/Thanks Page.html"
+        />
+        <label for="firstname">
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Prénom"
+            required
+          />
+        </label>
+        <label for="lastname">
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Nom"
+            required
+          />
+        </label>
         <input type="text" id="email" placeholder="@ Adresse mail" required />
-        <textarea cols="30" rows="10" placeholder="Ici votre message" required>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Ici votre message"
+          required
+        >
         </textarea>
-        <input type="submit" value="Envoyer" id="btn-submit" />
+        <input type="submit" class="btn" value="Envoyer" id="btn-submit" />
       </form>
     </div>
   </body>

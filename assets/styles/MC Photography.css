@@ -61,7 +61,7 @@ h1 {
 }
 
 body {
-  background: url(./AnnecyByNight.jpg) fixed no-repeat center/cover;
+  background: url(./background.jpg) fixed no-repeat center/cover;
   min-height: 100vh;
 }
 
@@ -82,7 +82,6 @@ h2 {
   padding: 10px;
   padding-bottom: 0;
   display: block;
-  grid-template-columns: 30% 70%;
 }
 .grid-container img {
   margin: 0 auto;
@@ -92,38 +91,39 @@ h2 {
 
 form {
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "i1 i2"
     "i3 i3"
     "ta ta"
-    "vi bt";
+    "bt bt";
 }
 #firstname {
-  position: relative;
-  display: block;
+  width: 90%;
   max-height: 20px;
   margin: 0;
-  margin: 5px;
   border: 1px solid black;
   padding: 10px;
   border-radius: 5px;
   font-size: 1.1rem;
   font-family: "font-reg";
+  grid-area: i1;
 }
 #surname {
-  position: relative;
-  display: block;
+  width: 90%;
   max-height: 20px;
-  margin: 5px;
+  margin: 0;
   border: 1px solid black;
   padding: 10px;
   border-radius: 5px;
   font-size: 1.1rem;
   font-family: "font-reg";
+  grid-area: i2;
 }
 #email {
+  width: 95%;
   max-height: 20px;
   margin: 0;
   margin-bottom: 5px;
@@ -135,6 +135,7 @@ form {
   grid-area: i3;
 }
 textarea {
+  width: 95%;
   margin: 0;
   margin-bottom: 10px;
   border: 1px solid black;
@@ -149,6 +150,7 @@ textarea {
 }
 
 #btn-submit {
+  width: 95%;
   max-height: 50px;
   margin: 0;
   margin-bottom: 10px;
